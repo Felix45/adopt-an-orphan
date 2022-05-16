@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .d-none {
   display: none;
 }
@@ -23,9 +27,33 @@
   justify-content: flex-end;
 }
 
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 ul,
 ol {
   list-style-type: none;
+}
+
+.bg-dark {
+  color: #fff;
+  background-color: #272a31;
+}
+
+.btn {
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ec5242;
+}
+
+.btn.btn-action {
+  width: 90%;
+  margin-top: 20px;
 }
 
 .header-topbar {
@@ -70,4 +98,18 @@ ol {
 
 nav {
   color: #272a31;
+}
+
+.services {
+  padding: 40px 20px;
+}
+
+.services .service {
+  margin: 20px 0;
+}
+
+.services .service .service-title {
+  color: #ec5242;
+  margin-right: 20px;
+  font-weight: bold;
 }
