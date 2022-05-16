@@ -6,3 +6,68 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.header-topbar {
+  padding: 10px;
+  background-color: #272a31;
+}
+
+.header-topbar a {
+  color: #fff;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.intro {
+  padding: 20px;
+  height: 500px;
+  background: #fff url('../images/mobile-bg.png') no-repeat 0 0;
+  background-size: contain;
+}
+
+.intro .intro-jumbo {
+  color: #ec5242;
+  margin-top: 2rem;
+}
+
+.intro .intro-jumbo .intro-description {
+  color: #272a31;
+  margin-top: 1.2rem;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  background-color: #fafafa;
+}
+
+.intro .intro-jumbo .intro-footer {
+  color: #272a31;
+  margin: 10px 5px;
+}
+
+.intro .intro-jumbo .intro-footer p {
+  margin-top: 10px;
+}
+
+nav {
+  color: #272a31;
+}
