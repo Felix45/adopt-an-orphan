@@ -37,18 +37,43 @@ ol {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .bg-dark {
   color: #fff;
   background-color: #272a31;
 }
 
+.bg-light {
+  color: #272a31;
+  background-color: #fff;
+}
+
 .btn {
   color: #fff;
-  padding: 20px;
+  padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: #ec5242;
+}
+
+.btn-block {
+  width: 90%;
 }
 
 .btn.btn-action {
@@ -112,4 +137,44 @@ nav {
   color: #ec5242;
   margin-right: 20px;
   font-weight: bold;
+}
+
+.our-team {
+  margin: 20px;
+}
+
+.our-team .team-member {
+  margin: 20px 0;
+}
+.our-team .our-team-profile {
+  width: 40%;
+}
+
+.our-team .team-member-details {
+  margin: 0 0 0 20px;
+}
+
+.our-team .team-member-details em {
+  color: #ec5242;
+}
+
+.our-team .team-member .team-member-position {
+  position: relative;
+}
+
+.our-team .team-member .team-member-position::after {
+  content: ' ';
+  width: 25px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.our-team .our-team-profile img {
+  width: 150px;
+}
+
+.our-team .team-member .team-member-bio {
+  color: #272a31;
 }
