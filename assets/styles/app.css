@@ -112,7 +112,7 @@ img {
 }
 
 .btn.btn-action {
-  width: 90%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -233,6 +233,18 @@ nav {
 
 .our-team .team-member .team-member-bio {
   color: #272a31;
+}
+
+.bg-about-one {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  right: -15px;
+  bottom: 60px;
+  position: absolute;
+  border-radius: 50%;
+  background: #f7f7f7 url('../images/chess.png');
+  background-size: contain;
 }
 
 .img-holder {
