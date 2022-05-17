@@ -55,7 +55,7 @@ const createButtonSection = () => {
   toggleButtonSection.className = 'team-members-expand';
   const toggleButton = document.createElement('a');
   toggleButton.innerHTML = 'MORE <span class=\'fa fa-angle-down fa-lg\'></span>';
-  toggleButton.className = 'btn d-flex flex-center';
+  toggleButton.className = 'btn btn-inverse d-flex flex-center';
   toggleButtonSection.appendChild(toggleButton);
 
   return toggleButtonSection;
@@ -105,7 +105,7 @@ const ourTeamSection = () => {
   section.appendChild(header);
 
   ourTeam.forEach((member, index) => { section.appendChild(teamMembers(member, index)); });
-  document.querySelector('main').appendChild(section);
+  document.getElementById('our-team').appendChild(section);
 
   const toggleButtonSection = createButtonSection();
   section.appendChild(toggleButtonSection);
