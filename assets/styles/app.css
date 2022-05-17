@@ -40,9 +40,18 @@ body {
   align-items: flex-end;
 }
 
+.fixed {
+  overflow: hidden;
+}
+
 ul,
 ol {
   list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 img {
@@ -290,4 +299,25 @@ nav {
 .app-footer img{
   width: 100px;
   filter: grayscale(1);
+}
+
+.mobile-menu {
+  color: #fff;
+  font-weight: 900;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  backdrop-filter: blur(4.5px);
+  background-color: rgba(169, 60, 40,0.85);
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 10px 0 10px 0;
+  border-bottom: 3px dotted #fff;
 }
