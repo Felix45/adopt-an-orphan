@@ -43,27 +43,27 @@ const ourTeam = [
   },
 ];
 
-const createHeaderSection  = (title, content, elClass='text-center') => {
+const createHeaderSection = (title, content, elClass = 'text-center') => {
   const header = document.createElement(title);
   header.className = elClass;
   header.textContent = content;
   return header;
-}
+};
 
 const createButtonSection = () => {
   const toggleButtonSection = document.createElement('div');
   toggleButtonSection.className = 'team-members-expand';
   const toggleButton = document.createElement('a');
-  toggleButton.innerHTML = `MORE <span class="fa fa-angle-down fa-lg"></span>`;
+  toggleButton.innerHTML = 'MORE <span class=\'fa fa-angle-down fa-lg\'></span>';
   toggleButton.className = 'btn d-flex flex-center';
   toggleButtonSection.appendChild(toggleButton);
 
   return toggleButtonSection;
-}
+};
 
 const teamMembers = (member, index) => {
   const memberRow = document.createElement('div');
-  memberRow.className = (index <= 1) ? 'd-flex flex-center team-member': 'd-none flex-center team-member';
+  memberRow.className = (index <= 1) ? 'd-flex flex-center team-member' : 'd-none flex-center team-member';
 
   const imgHolder = document.createElement('div');
   imgHolder.className = 'our-team-profile';
@@ -95,19 +95,19 @@ const teamMembers = (member, index) => {
   memberRow.appendChild(detailsDiv);
 
   return memberRow;
-}
+};
 
 const ourTeamSection = () => {
   const section = document.createElement('section');
   section.className = 'd-flex flex-column our-team';
-  
+
   const header = createHeaderSection('h2', 'Our Team');
   section.appendChild(header);
 
-  ourTeam.forEach((member, index) => { section.appendChild(teamMembers(member, index));})
+  ourTeam.forEach((member, index) => { section.appendChild(teamMembers(member, index)); });
   document.querySelector('main').appendChild(section);
 
   const toggleButtonSection = createButtonSection();
   section.appendChild(toggleButtonSection);
-}
+};
 ourTeamSection();

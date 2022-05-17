@@ -49,6 +49,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.p-2 {
+  padding: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -127,6 +131,7 @@ nav {
 
 .services {
   padding: 40px 20px;
+  margin: -40px 0 0 0;
 }
 
 .services .service {
@@ -146,6 +151,7 @@ nav {
 .our-team .team-member {
   margin: 20px 0;
 }
+
 .our-team .our-team-profile {
   width: 40%;
 }
