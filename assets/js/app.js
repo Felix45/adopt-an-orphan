@@ -101,8 +101,11 @@ const ourTeamSection = () => {
   const section = document.createElement('section');
   section.className = 'd-flex flex-column our-team';
 
-  const header = createHeaderSection('h2', 'Our Team');
-  section.appendChild(header);
+  const header = createHeaderSection('h2', 'Our Team','text-center title-underline');
+  const headerContainer = document.createElement('div');
+  headerContainer.className = 'pos-rel mb-2';
+  headerContainer.appendChild(header);
+  section.appendChild(headerContainer);
 
   ourTeam.forEach((member, index) => { section.appendChild(teamMembers(member, index)); });
   document.getElementById('our-team').appendChild(section);
