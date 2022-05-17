@@ -108,9 +108,28 @@ const ourTeamSection = () => {
   section.appendChild(headerContainer);
 
   ourTeam.forEach((member, index) => { section.appendChild(teamMembers(member, index)); });
-  document.getElementById('our-team').appendChild(section);
+  const teamSection = document.getElementById('our-team');
+  if(teamSection)
+    teamSection.appendChild(section);
 
   const toggleButtonSection = createButtonSection();
   section.appendChild(toggleButtonSection);
 };
 ourTeamSection();
+
+const showMenu = () => {
+  const userMenu = document.querySelector('nav ul');
+  const documentBody = document.querySelector('body');
+
+  if(document.documentElement.clientWidth <= 767){
+    userMenu.classList.toggle('mobile-menu');
+    documentBody.classList.toggle('fixed');
+  }
+  
+};
+
+const menuIcon = document.querySelector('.menu-icon');
+const menuClose = document.querySelector('.close-menu');
+
+menuIcon.addEventListener('click', showMenu);
+menuClose.addEventListener('click', showMenu);
