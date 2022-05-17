@@ -7,6 +7,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  width: 375px;
+}
+
 .d-flex {
   display: flex;
 }
@@ -41,6 +45,10 @@ img {
   max-width: 100%;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -53,13 +61,17 @@ img {
   padding: 1.5rem;
 }
 
+.pos-rel {
+  position: relative;
+}
+
 .text-center {
   text-align: center;
 }
 
 .bg-dark {
   color: #fff;
-  background-color: #272a31;
+  background-color: #414246;
 }
 
 .bg-light {
@@ -76,8 +88,10 @@ img {
   background-color: #ec5242;
 }
 
-.btn-block {
-  width: 90%;
+.btn-inverse {
+  color: #414246;
+  border: 1px solid #414246;
+  background-color: #fff;
 }
 
 .btn.btn-action {
@@ -101,6 +115,10 @@ img {
   height: 500px;
   background: #fff url('../images/mobile-bg.png') no-repeat 0 0;
   background-size: contain;
+}
+
+.intro.intro-about {
+  background: #f7f7f7;
 }
 
 .intro .intro-jumbo {
