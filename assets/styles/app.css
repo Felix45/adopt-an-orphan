@@ -82,6 +82,10 @@ img {
   padding: 1rem 0 0 0;
 }
 
+.fw-bold {
+  font-weight: 900;
+}
+
 .pos-rel {
   position: relative;
 }
@@ -145,6 +149,10 @@ img {
 
 .intro .intro-header {
   font-weight: 900;
+  background-image: url('../images/textbg.jpg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro.intro-about {
@@ -158,7 +166,7 @@ img {
 
 .intro .intro-jumbo .intro-description {
   color: #272a31;
-  margin-top: 1.2rem;
+  margin-top: 2.2rem;
   padding: 10px 15px;
   border: 2px solid #fff;
   background-color: #fafafa;
@@ -186,10 +194,15 @@ nav {
   margin: 20px 0;
 }
 
+.services img {
+  height: 50px;
+}
+
 .services .service .service-title {
   color: #ec5242;
   margin-right: 20px;
   font-weight: bold;
+  width: 200px;
 }
 
 .our-team {
