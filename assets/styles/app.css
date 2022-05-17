@@ -235,7 +235,20 @@ nav {
   color: #272a31;
 }
 
-.bg-about-one {
+.bg-about-two {
+  width: 80px;
+  height: 80px;
+  left: 15px;
+  bottom: 40px;
+  position: absolute;
+  border-radius: 50%;
+  background: #f7f7f7 url('../images/red-blue-image.png');
+  background-size: contain;
+
+}
+
+.bg-about-one,
+.bg-about-three {
   width: 50px;
   height: 50px;
   z-index: 1;
@@ -245,6 +258,13 @@ nav {
   border-radius: 50%;
   background: #f7f7f7 url('../images/chess.png');
   background-size: contain;
+}
+
+.bg-about-three {
+  width: 30px;
+  height: 30px;
+  left: 8%;
+  top: 30%;
 }
 
 .img-holder {
