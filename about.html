@@ -28,15 +28,15 @@
             </ul>
         </div>
 
-        <div class="intro intro-about">
+        <div class="intro intro-about mb-2">
           <nav>
             <div>
                 <span class="fa fa-bars fa-2x"></span>
             </div>
           </nav>
           <div class="intro-jumbo text-center">
-            <span>"Hello, Good people"</span>
-            <h1>Zawadi Orphanage <br /> Adopt an Orphan <br/> Campaign </h1>
+            <div class="mb-1">"Hello!, Good people"</div>
+            <h1 class="intro-header">Zawadi Orphanage <br /> Adopt an Orphan <br/> Campaign </h1>
             <p class="intro-description mb-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel non impedit ea? Labore, quibusdam cupiditate. lorem ipsum 
             </p>
@@ -50,40 +50,49 @@
     </header>
 
     <main>
-        <section class="d-flex flex-column mt-1 text-center flex-center bg-light">
-            <h2 class="d-flex mb-1">About the Zawadi <br/> Foundation</h2>
+        <section class="d-flex flex-column mt-1 mb-2 text-center flex-center bg-light">
+            <div class="pos-rel">
+              <h2 class="d-flex mb-1 title-underline">About the Zawadi Foundation</h2>
+            </div>
             <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img class="border-dark" src="assets/images/logo.png" alt="Zawadi foundation logo" />
             </div>
         </section>
 
-        <section class="text-center mb-1">
-            <div>
-                <h2 class="mb-1">See the success stories</h2>
+        <section class="text-center success-stories pt-1 mb-1">
+            <div class="mb-2">
+                <div class="pos-rel">
+                    <h2 class="mb-1 title-underline">See the success stories</h2>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis neque impedit, quas</p>
             </div>
 
-            <div class="d-flex p-2">
+            <div class="d-flex flex-column p-2 img-holder">
               <img src="assets/images/humanitarian-pic.jpeg" />
+              <p class="img-overlay d-flex flex-center">2018 <br/> Participated in shooting Educating a child film</p>
             </div>
-            <div class="d-flex p-2">
+            <div class="d-flex flex-column p-2 img-holder">
                 <img src="assets/images/humanitarian.webp" />
-              </div>
+                <p class="img-overlay d-flex flex-center">2022 <br/> Participated in shooting Educating a child film</p>
+            </div>
         </section>
 
-        <section class="p-2 text-center bg-dark">
-            <h2>Partner</h2>
+        <section class="p-2 text-center pos-rel bg-dark">
+            <div class="pos-rel">
+                <h2 class="title-underline">Partner</h2>
+            </div>
 
         </section>
 
     </main>
 
-    <footer class="p-2 bg-light">
-        <div class="d-flex">
+    <footer class="p-2 bg-light app-footer">
+        <div class="d-flex align-end">
             <div>
-                <span>&copy; Zawadi Foundation</span>
+                <span><img src="assets/images/logo.png" alt="Zawadi foundation logo" /></span>
             </div>
-            <div>
-                <span>2022 Zawadi Foundation, Some Rights Reserved</span>
+            <div class="mx-1">
+                <span>&copy; 2022 Zawadi Foundation, Some Rights Reserved.</span>
             </div>
         </div>
     </footer>
