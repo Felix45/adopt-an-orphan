@@ -63,7 +63,7 @@ const createButtonSection = () => {
 
 const teamMembers = (member, index) => {
   const memberRow = document.createElement('div');
-  memberRow.className = (index <= 1) ? 'd-flex flex-center team-member' : 'd-none flex-center d-flex-sm team-member';
+  memberRow.className = (index <= 1) ? 'd-flex flex-center flex-sm-start team-member' : 'd-none flex-center d-flex-sm team-member flex-sm-start';
 
   const imgHolder = document.createElement('div');
   imgHolder.className = 'our-team-profile pos-rel';

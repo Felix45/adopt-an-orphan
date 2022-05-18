@@ -368,23 +368,51 @@ nav {
   }
 
   .flex-sm-center {
+    align-items: center;
     justify-content: center;
   }
 
   .flex-sm-start {
+    align-items: flex-start;
     justify-content: flex-start;
   }
 
+  .flex-sm-between {
+    justify-content: space-between;
+  }
+
   .logo img {
-    width: 150px;
+    height: 60px;
+  }
+
+  .intro {
+    padding: 0;
+  }
+
+  .intro .menu {
+    background-color: #fff;
+  }
+
+  .intro .menu a {
+    color:#272a31;
+    padding: 10px;
   }
   
   .services .service {
     width: 200px;
   }
 
+  .our-team {
+    width: 80%;
+    margin: 40px auto;
+  }
+
   .our-team .team-member {
     flex: 50%;
+  }
+
+  .our-team .our-team-profile {
+    width: auto;
   }
 }
 
