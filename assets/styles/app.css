@@ -119,8 +119,9 @@ img {
 }
 
 .btn-inverse {
-  color: #414246;
-  border: 1px solid #414246;
+  color: #ec5242;
+  width: 100%;
+  border: 1px solid #ec5242;
   background-color: #fff;
 }
 
@@ -249,6 +250,10 @@ nav {
   border-bottom: 2px solid #ec5242;
 }
 
+.app-footer img {
+  width: 100px;
+}
+
 .our-team .our-team-profile img {
   width: 150px;
 }
@@ -266,7 +271,6 @@ nav {
   border-radius: 50%;
   background: #f7f7f7 url('../images/red-blue-image.png');
   background-size: contain;
-
 }
 
 .bg-about-one,
@@ -306,12 +310,7 @@ nav {
   color: #fff;
   margin: 20px;
   font-weight: bold;
-  background-color: rgba(169, 60, 40,0.8);
-}
-
-.app-footer img{
-  width: 100px;
-  filter: grayscale(1);
+  background-color: rgba(169, 60, 40, 0.8);
 }
 
 .mobile-menu {
@@ -326,7 +325,7 @@ nav {
   bottom: 0;
   z-index: 2;
   backdrop-filter: blur(4.5px);
-  background-color: rgba(169, 60, 40,0.85);
+  background-color: rgba(169, 60, 40, 0.85);
 }
 
 .mobile-menu a {

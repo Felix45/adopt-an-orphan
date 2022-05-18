@@ -53,9 +53,9 @@ const createHeaderSection = (title, content, elClass = 'text-center') => {
 const createButtonSection = () => {
   const toggleButtonSection = document.createElement('div');
   toggleButtonSection.className = 'team-members-expand';
-  const toggleButton = document.createElement('a');
-  toggleButton.innerHTML = 'MORE <span class=\'fa fa-angle-down fa-lg\'></span>';
-  toggleButton.className = 'btn btn-inverse d-flex flex-center';
+  const toggleButton = document.createElement('button');
+  toggleButton.innerHTML = 'MORE <span class=\'fa fa-angle-down fa-lg mx-1\'></span>';
+  toggleButton.className = 'btn btn-inverse d-flex flex-center mt-1 mb-1';
   toggleButtonSection.appendChild(toggleButton);
 
   return toggleButtonSection;
@@ -101,7 +101,7 @@ const ourTeamSection = () => {
   const section = document.createElement('section');
   section.className = 'd-flex flex-column our-team';
 
-  const header = createHeaderSection('h2', 'Our Team','text-center title-underline');
+  const header = createHeaderSection('h2', 'Our Team', 'text-center title-underline');
   const headerContainer = document.createElement('div');
   headerContainer.className = 'pos-rel mb-2';
   headerContainer.appendChild(header);
@@ -109,9 +109,9 @@ const ourTeamSection = () => {
 
   ourTeam.forEach((member, index) => { section.appendChild(teamMembers(member, index)); });
   const teamSection = document.getElementById('our-team');
-  if(teamSection)
+  if (teamSection) {
     teamSection.appendChild(section);
-
+  }
   const toggleButtonSection = createButtonSection();
   section.appendChild(toggleButtonSection);
 };
@@ -121,11 +121,10 @@ const showMenu = () => {
   const userMenu = document.querySelector('nav ul');
   const documentBody = document.querySelector('body');
 
-  if(document.documentElement.clientWidth <= 767){
+  if (document.documentElement.clientWidth <= 767) {
     userMenu.classList.toggle('mobile-menu');
     documentBody.classList.toggle('fixed');
   }
-  
 };
 
 const menuIcon = document.querySelector('.menu-icon');
@@ -133,3 +132,27 @@ const menuClose = document.querySelector('.close-menu');
 
 menuIcon.addEventListener('click', showMenu);
 menuClose.addEventListener('click', showMenu);
+
+const showTeamSection = (event) => {
+  const teamSection = document.querySelectorAll('.team-member');
+
+  teamSection.forEach((section, index) => {
+    if (index > 1) {
+      section.classList.toggle('d-none');
+      section.classList.toggle('d-flex');
+
+      if (section.classList.contains('d-flex')) {
+        event.target.innerHTML = '';
+        event.target.innerHTML = 'Less <span class="fa fa-angle-up fa-lg mx-1"></span>';
+      } else {
+        event.target.innerHTML = '';
+        event.target.innerHTML = 'More <span class="fa fa-angle-down fa-lg mx-1"></span>';
+      }
+    }
+  });
+};
+
+const teamToggleButton = document.querySelector('.btn-inverse');
+if (teamToggleButton) {
+  teamToggleButton.addEventListener('click', showTeamSection);
+}
