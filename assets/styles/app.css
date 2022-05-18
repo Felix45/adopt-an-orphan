@@ -189,6 +189,7 @@ nav {
 .services {
   padding: 40px 20px;
   margin: -40px 0 0 0;
+  background-image: url('../images/abstractbg.svg');
 }
 
 .services .service {
@@ -300,7 +301,7 @@ nav {
   left: -10px;
   top: -15px;
   position: absolute;
-  background: url('../images/checkers.jpg') repeat;
+  background: url('../images/chess.png') repeat;
   background-size: contain;
 }
 
@@ -377,8 +378,25 @@ nav {
     justify-content: flex-start;
   }
 
+  .flex-sm-end {
+    justify-content: end;
+  }
+
   .flex-sm-between {
     justify-content: space-between;
+  }
+
+  .p-sm-r {
+    padding-right: 0;
+  }
+
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .intro .menu .btn-highlight {
+    color:#ec5242;
+    border: 3px solid #ec5242;
   }
 
   .logo img {
@@ -386,7 +404,10 @@ nav {
   }
 
   .intro {
+    height: 750px;
     padding: 0;
+    background-image: url('../images/main-bg.png');
+    background-size: cover;
   }
 
   .intro .menu {
@@ -395,11 +416,14 @@ nav {
 
   .intro .menu a {
     color:#272a31;
-    padding: 10px;
+    padding: 5px 30px;
   }
   
   .services .service {
     width: 200px;
+    margin: 20px 5px 0 0;
+    padding: 20px;
+    background-color: #8181814d;
   }
 
   .our-team {
@@ -418,18 +442,18 @@ nav {
 
 @media screen and (min-width: 991px) {
   .container {
-    width: 960px;
+    width: 760px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 960px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1320px;
+    width: 1152px;
   }
 }
