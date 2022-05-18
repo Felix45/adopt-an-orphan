@@ -66,13 +66,17 @@ const teamMembers = (member, index) => {
   memberRow.className = (index <= 1) ? 'd-flex flex-center team-member' : 'd-none flex-center team-member';
 
   const imgHolder = document.createElement('div');
-  imgHolder.className = 'our-team-profile';
+  imgHolder.className = 'our-team-profile pos-rel';
 
   const profileImg = document.createElement('img');
   profileImg.src = member.picture;
   profileImg.alt = member.alt;
 
+  const bgImage = document.createElement('span');
+  bgImage.className = 'bg-team-section';
+
   imgHolder.appendChild(profileImg);
+  imgHolder.appendChild(bgImage);
   memberRow.appendChild(imgHolder);
 
   const detailsDiv = document.createElement('div');
