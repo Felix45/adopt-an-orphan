@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Poppins:wght@500;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
 
 * {
   margin: 0;
@@ -42,6 +43,14 @@
 
 .container {
   margin: auto;
+}
+
+.cocogoose {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+.title-big {
+  font-size: 1.5rem;
 }
 
 ul,
@@ -150,6 +159,7 @@ img {
 
 .intro .intro-header {
   font-weight: 900;
+  text-transform: uppercase;
   background-image: url('../images/textbg.jpg');
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -325,6 +335,10 @@ nav {
   background-color: rgba(169, 60, 40, 0.8);
 }
 
+.img-overlay span {
+  font-size: 32px;
+}
+
 .mobile-menu {
   color: #fff;
   font-weight: 900;
@@ -386,8 +400,21 @@ nav {
     justify-content: space-between;
   }
 
+  .mb-sm-3 {
+    margin: 0 0 3rem 0;
+  }
+
   .p-sm-r {
     padding-right: 0;
+  }
+
+  .title-big {
+    font-size: 3rem;
+  }
+
+  .intro .menu .active,
+  .intro .menu .btn-highlight {
+    color:#ec5242;
   }
 
   .text-sm-center {
@@ -395,7 +422,7 @@ nav {
   }
 
   .intro .menu .btn-highlight {
-    color:#ec5242;
+    
     border: 3px solid #ec5242;
   }
 
@@ -412,11 +439,26 @@ nav {
 
   .intro .menu {
     background-color: #fff;
+    box-shadow: 5px 5px 5px #ddd;
   }
 
   .intro .menu a {
     color:#272a31;
     padding: 5px 30px;
+  }
+
+  .intro .intro-jumbo#home {
+    width: 60%;
+    margin: 7% 10%;
+  }
+
+  .intro .intro-jumbo#home .intro-description {
+    margin-top: 0;
+  }
+
+  .bg-sm-dark {
+    color: #fff;
+    background-color: #414246;
   }
   
   .services .service {
@@ -431,7 +473,8 @@ nav {
     margin: 40px auto;
   }
 
-  .our-team .team-member {
+  .our-team .team-member,
+  .img-holder {
     flex: 50%;
   }
 
