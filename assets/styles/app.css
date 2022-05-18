@@ -118,6 +118,10 @@ img {
   background-color: #fff;
 }
 
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
 .btn {
   color: #fff;
   padding: 10px 20px;
@@ -175,6 +179,17 @@ img {
   margin-top: 2rem;
 }
 
+.mobile-menu a {
+  display: block;
+  padding: 10px 0 10px 0;
+  border-bottom: 3px dotted #fff;
+}
+
+.intro .intro-jumbo p,
+.intro .intro-jumbo a {
+  color: #272a31;
+}
+
 .intro .intro-jumbo .intro-description {
   color: #272a31;
   margin-top: 2.2rem;
@@ -204,6 +219,8 @@ nav {
 
 .services .service {
   margin: 20px 0;
+  padding: 20px;
+  background-color: #8181814d;
 }
 
 .services img {
@@ -277,7 +294,7 @@ nav {
   width: 80px;
   height: 80px;
   left: 15px;
-  bottom: 40px;
+  top: -30px;
   position: absolute;
   border-radius: 50%;
   background: #f7f7f7 url('../images/red-blue-image.png');
@@ -290,7 +307,7 @@ nav {
   height: 50px;
   z-index: 1;
   right: -15px;
-  bottom: 60px;
+  top: -30px;
   position: absolute;
   border-radius: 50%;
   background: #f7f7f7 url('../images/chess.png');
@@ -352,12 +369,6 @@ nav {
   z-index: 2;
   backdrop-filter: blur(4.5px);
   background-color: rgba(169, 60, 40, 0.85);
-}
-
-.mobile-menu a {
-  display: block;
-  padding: 10px 0 10px 0;
-  border-bottom: 3px dotted #fff;
 }
 
 @media screen and (min-width: 767px) {
@@ -446,13 +457,21 @@ nav {
     padding: 5px 30px;
   }
 
-  .intro .intro-jumbo#home {
+  .intro .intro-jumbo {
     width: 60%;
+    margin: auto;
+  }
+
+  .intro .intro-jumbo#home {
     margin: 7% 10%;
   }
 
   .intro .intro-jumbo#home .intro-description {
     margin-top: 0;
+  }
+
+  .intro .intro-jumbo#about {
+    margin-top: 10%;
   }
 
   .bg-sm-dark {
@@ -463,8 +482,6 @@ nav {
   .services .service {
     width: 200px;
     margin: 20px 5px 0 0;
-    padding: 20px;
-    background-color: #8181814d;
   }
 
   .our-team {
