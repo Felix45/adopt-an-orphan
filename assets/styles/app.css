@@ -179,7 +179,7 @@ img {
   color: #272a31;
   margin-top: 2.2rem;
   padding: 10px 15px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   background-color: #fafafa;
 }
 
@@ -369,11 +369,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .d-flex-sm-none {
     display: none;
   }
-  
+
   .flex-sm-column {
     flex-direction: column;
   }
@@ -414,7 +414,7 @@ nav {
 
   .intro .menu .active,
   .intro .menu .btn-highlight {
-    color:#ec5242;
+    color: #ec5242;
   }
 
   .text-sm-center {
@@ -422,7 +422,6 @@ nav {
   }
 
   .intro .menu .btn-highlight {
-    
     border: 3px solid #ec5242;
   }
 
@@ -443,7 +442,7 @@ nav {
   }
 
   .intro .menu a {
-    color:#272a31;
+    color: #272a31;
     padding: 5px 30px;
   }
 
@@ -460,7 +459,7 @@ nav {
     color: #fff;
     background-color: #414246;
   }
-  
+
   .services .service {
     width: 200px;
     margin: 20px 5px 0 0;
