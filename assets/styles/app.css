@@ -40,6 +40,10 @@
   overflow: hidden;
 }
 
+.container {
+  margin: auto;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -343,11 +347,12 @@ nav {
 
 @media screen and (min-width: 767px) {
   .container {
-    width: 90%;
+    width: 720px;
   }
 
   .d-flex-sm {
     display: flex;
+    flex-wrap: wrap;
   }
   
   .d-flex-sm-none {
@@ -366,11 +371,37 @@ nav {
     justify-content: center;
   }
 
+  .flex-sm-start {
+    justify-content: flex-start;
+  }
+
   .logo img {
     width: 150px;
   }
   
   .services .service {
     width: 200px;
+  }
+
+  .our-team .team-member {
+    flex: 50%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1320px;
   }
 }
