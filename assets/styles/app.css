@@ -7,10 +7,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-body {
-  width: 375px;
-}
-
 .d-flex {
   display: flex;
 }
@@ -343,4 +339,38 @@ nav {
   display: block;
   padding: 10px 0 10px 0;
   border-bottom: 3px dotted #fff;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  .d-flex-sm {
+    display: flex;
+  }
+  
+  .d-flex-sm-none {
+    display: none;
+  }
+  
+  .flex-sm-column {
+    flex-direction: column;
+  }
+
+  .flex-sm-row {
+    flex-direction: row;
+  }
+
+  .flex-sm-center {
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+  
+  .services .service {
+    width: 200px;
+  }
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="d-flex flex-end header-topbar d-none">
+        <div class="d-flex flex-end header-topbar d-none d-flex-sm">
             <ul class="d-flex">
                 <li>
                     <a href="">
@@ -29,15 +29,18 @@
         </div>
 
         <div class="intro">
-          <nav class="menu">
-            <div class="menu-icon">
+          <nav class="menu d-flex-sm">
+            <div class="menu-icon d-flex-sm-none">
                 <span class="fa fa-bars fa-2x"></span>
             </div>
-            <ul class="d-none p-2">
-                <li class="d-flex flex-end">
+            <div class="logo d-none d-flex-sm">
+              <img src="assets/images/logo.png" alt="Zawadi foundation logo" />
+            </div>
+            <ul class="d-none p-2 d-flex-sm">
+                <li class="d-flex flex-end d-flex-sm-none">
                     <span class="fa fa-times fa-2x close-menu"></span>
                 </li>
-                <li>
+                <li class="d-flex-sm-none">
                     <a href="index.html" class="fa fa-home fa-2x"></a>
                 </li>
                 <li><a href="about.html">About</a></li>
@@ -65,36 +68,38 @@
             <div class="pos-rel">
                 <h2 class="d-flex flex-center title-underline">Our Services</h2>
             </div>
-            <div class="d-flex align-end service">
+           <div class="d-flex-sm flex-sm-center">
+            <div class="d-flex align-end service flex-sm-column flex-sm-center">
                 <div class="d-flex flex-column flex-center service-title">
                     <img src="assets/images/family.svg" alt="Adoption services" />
                     <h3 class="fw-bold">Adoption</h3>
                 </div>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             </div>
-            <div class="d-flex align-end mt-1 service">
+            <div class="d-flex align-end mt-1 service flex-sm-column flex-sm-center">
                 <div class="d-flex flex-column flex-center service-title">
                     <img src="assets/images/desk-education.svg" alt="Social Protection" />
                     <h3 class="fw-bold">Education</h3>
                 </div>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             </div>
-            <div class="d-flex align-end service">
+            <div class="d-flex align-end service flex-sm-column flex-sm-center">
                 <div class="d-flex flex-column flex-center service-title">
                     <img src="assets/images/justice-law.svg" alt="Social Protection" />
                     <h3 class="fw-bold">Probono</h3>
                 </div>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             </div>
-            <div class="d-flex align-end service">
+            <div class="d-flex align-end service flex-sm-column flex-sm-center">
                 <div class="d-flex flex-column flex-center service-title">
                     <img src="assets/images/chat.svg" alt="Social Protection" />
                     <h3 class="fw-bold">Counselling</h3>
                 </div>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             </div>
+            </div>
             <div class="d-flex flex-center">
-                <a href="" class="btn btn-action fw-bold">Join Our Cause</a>
+                <a href="" class="btn btn-action d-flex-sm-none fw-bold">Join Our Cause</a>
             </div>
         </section>
 
