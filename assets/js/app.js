@@ -54,7 +54,7 @@ const createButtonSection = () => {
   const toggleButtonSection = document.createElement('div');
   toggleButtonSection.className = 'team-members-expand';
   const toggleButton = document.createElement('button');
-  toggleButton.innerHTML = 'MORE <span class=\'fa fa-angle-down fa-lg mx-1\'></span>';
+  toggleButton.innerHTML = '<span class=\'more\'> MORE </span> <span class=\'fa fa-angle-down fa-lg mx-1\'></span>';
   toggleButton.className = 'btn btn-inverse d-flex flex-center d-flex-sm-none mt-1 mb-1';
   toggleButtonSection.appendChild(toggleButton);
 
@@ -142,19 +142,21 @@ menuClose.addEventListener('click', showMenu);
 
 const showTeamSection = () => {
   const teamSection = document.querySelectorAll('.team-member');
-  const buttonClicked = document.querySelector('.team-member span');
+  const buttonText = document.querySelector('.team-members-expand span.more');
+  const buttonClicked = document.querySelector('.team-members-expand span.fa');
 
   teamSection.forEach((section, index) => {
     if (index > 1) {
       section.classList.toggle('d-none');
       section.classList.toggle('d-flex');
-
-      if (section.classList.contains('d-flex')) {
-        buttonClicked.classList.toggle('fa-angle-down');
-        buttonClicked.classList.toggle('fa-angle-up');
-      }
     }
   });
+
+  const changeText = buttonText.textContent.trim() === 'MORE' ? 'LESS' : 'MORE';
+  buttonText.textContent = changeText;
+
+  buttonClicked.classList.toggle('fa-angle-up');
+  buttonClicked.classList.toggle('fa-angle-down');
 };
 
 const teamToggleButton = document.querySelector('.btn-inverse');
