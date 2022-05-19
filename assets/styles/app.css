@@ -71,6 +71,10 @@ img {
   max-width: 100%;
 }
 
+.mx-auto {
+  margin: auto;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -142,9 +146,10 @@ img {
   background-color: #fff;
 }
 
-.btn.btn-action {
+.btn-action {
   width: 100%;
   margin-top: 20px;
+  padding: 2rem 0;
 }
 
 .header-topbar {
@@ -160,7 +165,7 @@ img {
 
 .intro {
   padding: 20px;
-  height: 500px;
+  height: 570px;
   background: #fff url('../images/mobile-bg.png') no-repeat 0 0;
   background-size: cover;
 }
@@ -208,6 +213,10 @@ img {
 
 .intro .intro-jumbo .intro-footer p {
   margin-top: 10px;
+}
+
+.intro .intro-jumbo .cocogoose {
+  color: #ec5242;
 }
 
 nav {
@@ -290,6 +299,10 @@ nav {
 
 .app-footer img {
   width: 100px;
+}
+
+.partners img {
+  width: 140px;
 }
 
 .our-team .our-team-profile img {
@@ -386,10 +399,6 @@ nav {
   filter: grayscale();
 }
 
-.partners img {
-  width: 140px;
-}
-
 @media screen and (min-width: 767px) {
   .container {
     width: 720px;
@@ -444,6 +453,10 @@ nav {
 
   .p-sm-r {
     padding-right: 0;
+  }
+
+  .p-w-sm {
+    width: 60%;
   }
 
   .title-big {
@@ -529,6 +542,10 @@ nav {
     margin: 20px 5px 0 0;
   }
 
+  .services .service .service-title {
+    margin-right: 0;
+  }
+
   .our-team {
     width: 90%;
     margin: 40px auto;
@@ -580,7 +597,7 @@ nav {
   }
 
   .intro {
-    height: 700px;
+    height: 650px;
   }
 
   .title-big {
