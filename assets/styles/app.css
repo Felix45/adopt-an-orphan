@@ -158,7 +158,7 @@ img {
   padding: 20px;
   height: 500px;
   background: #fff url('../images/mobile-bg.png') no-repeat 0 0;
-  background-size: contain;
+  background-size: cover;
 }
 
 .intro .intro-header {
@@ -253,6 +253,7 @@ nav {
 }
 
 .our-team .team-member-details {
+  width: 50%;
   margin: 0 0 0 20px;
 }
 
@@ -509,12 +510,12 @@ nav {
   }
 
   .services .service {
-    width: 200px;
+    width: 170px;
     margin: 20px 5px 0 0;
   }
 
   .our-team {
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
   }
 
@@ -526,11 +527,19 @@ nav {
   .our-team .our-team-profile {
     width: auto;
   }
+
+  .our-team .team-member-details {
+    margin: 0 0 0 10px;
+  }
 }
 
 @media screen and (min-width: 991px) {
   .container {
     width: 760px;
+  }
+
+  .services .service {
+    width: 200px;
   }
 
   .title-big {
@@ -539,6 +548,14 @@ nav {
 
   .intro .menu a {
     padding: 5px 20px;
+  }
+
+  .our-team {
+    width: 80%;
+  }
+
+  .our-team .team-member-details {
+    width: 200px;
   }
 }
 
@@ -549,6 +566,10 @@ nav {
 
   .title-big {
     font-size: 2.5rem;
+  }
+
+  .our-team .team-member-details {
+    width: 300px;
   }
 }
 
