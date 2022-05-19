@@ -55,7 +55,7 @@ const createButtonSection = () => {
   toggleButtonSection.className = 'team-members-expand';
   const toggleButton = document.createElement('button');
   toggleButton.innerHTML = '<span class=\'more\'> MORE </span> <span class=\'fa fa-angle-down fa-lg mx-1\'></span>';
-  toggleButton.className = 'btn btn-inverse d-flex flex-center d-flex-sm-none mt-1 mb-1';
+  toggleButton.className = 'btn btn-inverse d-flex flex-center d-flex-sm-none mb-1';
   toggleButtonSection.appendChild(toggleButton);
 
   return toggleButtonSection;

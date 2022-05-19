@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -378,6 +382,14 @@ nav {
   background-color: rgba(169, 60, 40, 0.85);
 }
 
+.partners {
+  filter: grayscale();
+}
+
+.partners img {
+  width: 140px;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 720px;
@@ -436,6 +448,10 @@ nav {
 
   .title-big {
     font-size: 2rem;
+  }
+
+  .partners img {
+    width: 200px;
   }
 
   .intro .menu .active,
