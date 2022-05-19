@@ -163,7 +163,6 @@ img {
 
 .intro .intro-header {
   font-weight: 900;
-  text-transform: uppercase;
   background-image: url('../images/textbg.jpg');
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -245,7 +244,7 @@ nav {
 }
 
 .our-team .team-member {
-  margin: 20px 0;
+  margin: 20px 0 40px;
 }
 
 .our-team .our-team-profile {
