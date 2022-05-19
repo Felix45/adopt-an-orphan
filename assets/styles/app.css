@@ -305,7 +305,7 @@ nav {
 #bg-about-two {
   width: 70px;
   height: 70px;
-  left: 0px;
+  left: 0;
   top: -65px;
   background: #f7f7f7 url('../images/red-blue-image.png');
 }
@@ -375,6 +375,14 @@ nav {
 @media screen and (min-width: 767px) {
   .container {
     width: 720px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
   }
 
   .d-flex-sm {
@@ -542,6 +550,7 @@ nav {
   .container {
     width: 1152px;
   }
+
   .title-big {
     font-size: 3rem;
   }

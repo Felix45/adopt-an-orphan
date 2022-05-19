@@ -140,7 +140,7 @@ const menuClose = document.querySelector('.close-menu');
 menuIcon.addEventListener('click', showMenu);
 menuClose.addEventListener('click', showMenu);
 
-const showTeamSection = (event) => {
+const showTeamSection = () => {
   const teamSection = document.querySelectorAll('.team-member');
   const buttonClicked = document.querySelector('.team-member span');
 
@@ -158,6 +158,16 @@ const showTeamSection = (event) => {
 };
 
 const teamToggleButton = document.querySelector('.btn-inverse');
+
 if (teamToggleButton) {
   teamToggleButton.addEventListener('click', showTeamSection);
 }
+
+const fixedMenu = () => {
+  const header = document.querySelector('.menu');
+  const isFixed = this.window.scrollY > 200 ? header.classList.add('sticky') : header.classList.remove('sticky');
+
+  return isFixed;
+};
+
+window.addEventListener('scroll', fixedMenu);
