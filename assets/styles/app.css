@@ -457,7 +457,7 @@ nav {
   }
 
   .intro {
-    height: 750px;
+    height: 600px;
     padding: 0;
     background-image: url('../images/main-bg.png');
     background-size: cover;
@@ -562,6 +562,10 @@ nav {
 @media screen and (min-width: 1200px) {
   .container {
     width: 960px;
+  }
+
+  .intro {
+    height: 700px;
   }
 
   .title-big {
