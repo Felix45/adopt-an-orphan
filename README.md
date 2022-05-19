@@ -4,6 +4,8 @@
 
 > This is an Orphanage website that creates awareness on adoption & caring for orphaned children 
 
+![zawadi foundation project screenshot](assets/images/foundation.png)
+
 
 ## Built With
 
@@ -74,6 +76,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on and [Cindy Shin](https://www.behance.net/adagio07), for using her design.
+- Hat tip to [Pexels](https://www.pexels.com/collections/side-profiles-d1j9mjy/) free stock photos and [SVG Repo](https://www.svgrepo.com) for the svg icons used in this design.
 
 ## 📝 License
 
