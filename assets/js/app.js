@@ -103,7 +103,7 @@ const teamMembers = (member, index) => {
 
 const ourTeamSection = () => {
   const section = document.createElement('section');
-  section.className = 'd-flex flex-column our-team';
+  section.className = 'container d-flex flex-column our-team';
 
   const header = createHeaderSection('h2', 'Our Team', 'text-center title-underline');
   const headerContainer = document.createElement('div');

@@ -33,7 +33,6 @@
 }
 
 .flex-center {
-  align-items: center;
   justify-content: center;
 }
 
@@ -55,6 +54,10 @@
 
 .title-big {
   font-size: 1.5rem;
+}
+
+.align-center {
+  align-items: center;
 }
 
 ul,
@@ -430,7 +433,6 @@ nav {
   }
 
   .flex-sm-center {
-    align-items: center;
     justify-content: center;
   }
 
@@ -482,6 +484,10 @@ nav {
 
   .logo img {
     height: 60px;
+  }
+
+  .align-end-sm {
+    align-items: center;
   }
 
   .intro {
@@ -580,10 +586,6 @@ nav {
 
   .intro .menu a {
     padding: 5px 20px;
-  }
-
-  .our-team {
-    width: 80%;
   }
 
   .our-team .team-member-details {
