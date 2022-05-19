@@ -221,6 +221,12 @@ nav {
   margin: 20px 0;
   padding: 20px;
   background-color: #8181814d;
+  transition: all 2s;
+}
+
+.services .service:hover {
+  border: 2px solid #fff;
+  transform: scale(1.02);
 }
 
 .services img {
