@@ -142,6 +142,7 @@ menuClose.addEventListener('click', showMenu);
 
 const showTeamSection = (event) => {
   const teamSection = document.querySelectorAll('.team-member');
+  const buttonClicked = document.querySelector('.team-member span');
 
   teamSection.forEach((section, index) => {
     if (index > 1) {
@@ -149,11 +150,8 @@ const showTeamSection = (event) => {
       section.classList.toggle('d-flex');
 
       if (section.classList.contains('d-flex')) {
-        event.target.innerHTML = '';
-        event.target.innerHTML = 'Less <span class="fa fa-angle-up fa-lg mx-1"></span>';
-      } else {
-        event.target.innerHTML = '';
-        event.target.innerHTML = 'More <span class="fa fa-angle-down fa-lg mx-1"></span>';
+        buttonClicked.classList.toggle('fa-angle-down');
+        buttonClicked.classList.toggle('fa-angle-up');
       }
     }
   });

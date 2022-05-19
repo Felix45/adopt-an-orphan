@@ -290,19 +290,7 @@ nav {
   color: #272a31;
 }
 
-.bg-about-two {
-  width: 80px;
-  height: 80px;
-  left: 15px;
-  top: -30px;
-  position: absolute;
-  border-radius: 50%;
-  background: #f7f7f7 url('../images/red-blue-image.png');
-  background-size: contain;
-}
-
-.bg-about-one,
-.bg-about-three {
+.bg-about {
   width: 50px;
   height: 50px;
   z-index: 1;
@@ -314,11 +302,24 @@ nav {
   background-size: contain;
 }
 
-.bg-about-three {
-  width: 30px;
-  height: 30px;
-  left: 8%;
-  top: 30%;
+#bg-about-two {
+  width: 70px;
+  height: 70px;
+  left: 0px;
+  top: -65px;
+  background: #f7f7f7 url('../images/red-blue-image.png');
+}
+
+#bg-about-four {
+  left: 50%;
+  top: 5%;
+  background: #f7f7f7 url('../images/red-circle.png');
+  background-size: contain;
+}
+
+#bg-about-five {
+  background: #f7f7f7 url('../images/black-circle.png');
+  background-size: contain;
 }
 
 .bg-team-section {
@@ -420,7 +421,7 @@ nav {
   }
 
   .title-big {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .intro .menu .active,
@@ -454,7 +455,7 @@ nav {
 
   .intro .menu a {
     color: #272a31;
-    padding: 5px 30px;
+    padding: 5px 15px;
   }
 
   .intro .intro-jumbo {
@@ -477,6 +478,20 @@ nav {
   .bg-sm-dark {
     color: #fff;
     background-color: #414246;
+  }
+
+  #bg-about-two {
+    left: -80px;
+  }
+
+  #bg-about-one {
+    right: -70px;
+    top: 100px;
+  }
+
+  #bg-about-four {
+    left: 25%;
+    top: 15%;
   }
 
   .services .service {
@@ -503,16 +518,31 @@ nav {
   .container {
     width: 760px;
   }
+
+  .title-big {
+    font-size: 2rem;
+  }
+
+  .intro .menu a {
+    padding: 5px 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 960px;
   }
+
+  .title-big {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     width: 1152px;
+  }
+  .title-big {
+    font-size: 3rem;
   }
 }
