@@ -461,6 +461,10 @@ nav {
     width: 60%;
   }
 
+  .d-block-sm {
+    display: block;
+  }
+
   .title-big {
     font-size: 2rem;
   }
