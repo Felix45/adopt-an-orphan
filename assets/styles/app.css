@@ -620,3 +620,9 @@ nav {
     font-size: 3rem;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .intro .intro-jumbo#home {
+    margin-top: 3%;
+  }
+}
