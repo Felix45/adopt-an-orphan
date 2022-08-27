@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Adopt an Orphan
+# Adopt an Orphan - HTML Capstone Project
 
 > This is an Orphanage website that creates awareness on adoption & caring for orphaned children 
 
